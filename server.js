@@ -22,7 +22,11 @@ startUp().catch(e => console.log(e));
 
 async function startUp(){
     console.log(Colors.Message, "Starting Server!")
-    await option.load().catch(e => console.error(e));
+    try{
+        await option.load()
+    }catch(e){
+        Console.log(Colors.Alert, "ERROR: LOADING OF OPTIONS DIDN'T HAPPEN");
+    }
     server.listen(option.http.port);
     console.log(Colors.Success, `Server started! Listening on port ${option.http.port}`);
 }
