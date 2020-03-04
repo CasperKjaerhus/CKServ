@@ -4,6 +4,8 @@ const http = require('http');
 
 /*Imports*/
 const {Options} = require('./server/options.js');
+const {Messagetype, ServerLog} = require('./server/consoleLog.js');
+
 /*Options*/
 const option = new Options();
 
@@ -21,7 +23,7 @@ const server = http.createServer((req, res) => {
 startUp().catch(e => console.log(e));
 
 async function startUp(){
-    console.log(Colors.Message, "Starting Server!")
+    ServerLog("Starting Server!", Messagetype.Success);
     try{
         await option.load()
     }catch(e){
