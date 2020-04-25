@@ -1,0 +1,24 @@
+{
+  "name": "ckserver",
+  "version": "1.0.0",
+  "description": "A barebones js webserver",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CasperKjaerhus/CServ.git"
+  },
+  "keywords": [
+    "Barebones",
+    "webserver"
+  ],
+  "author": "Casper Kjærhus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CasperKjaerhus/CServ/issues"
+  },
+  "homepage": "https://github.com/CasperKjaerhus/CServ#readme"
+}
