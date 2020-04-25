@@ -1,21 +1,17 @@
 {
-  "name": "Cserv",
+  "name": "cserv",
   "version": "0.0.1",
-  "description": "A simple webserver",
-  "main": "./server/Cserv.js",
+  "description": "",
+  "main": "launch.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CasperKjaerhus/Web-Server.git"
   },
-  "keywords": [
-    "web",
-    "server"
-  ],
-  "author": "Casper Kjærhus Leth",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CasperKjaerhus/Web-Server/issues"
